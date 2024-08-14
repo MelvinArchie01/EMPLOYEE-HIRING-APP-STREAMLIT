@@ -14,7 +14,7 @@ st.write(''' The Employee Hiring App empowers HR professionals
 
 #importing data to the web app
 
-perf_model = pd.read_csv("C:\\Users\\user\\OneDrive\\Desktop\\EMPLOYEE STREAMLIT APP VS CODE\\INX_Future_Inc_Employee_Performance_CDS_Project2_Data_V1.8.csv")
+perf_model = pd.read_csv("INX_Future_Inc_Employee_Performance_CDS_Project2_Data_V1.8.csv")
 
 # Calculate the number of employees per department
 emp_count_per_dept = perf_model["EmpDepartment"].value_counts()
