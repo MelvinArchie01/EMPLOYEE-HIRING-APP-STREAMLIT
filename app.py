@@ -101,5 +101,8 @@ encoded_input = [
 #Predicting Employee Performance
 if st.sidebar.button('Performance Rating'):
     prediction = model_rf.predict([encoded_input])[0]
+
+st.sidebar.write('Predicted Performance :', le_target.inverse_transform([prediction])[0])
+
     
     
