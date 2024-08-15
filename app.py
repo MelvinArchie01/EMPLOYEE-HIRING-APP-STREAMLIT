@@ -98,23 +98,8 @@ encoded_input = [
     Employee_years_since_last_promotion
     
 ]
-
-performance_rating_map = {
-    1: "Low",
-    2: "Good",
-    3: "Excellent",
-    4: "Outstanding"
-}
-
-# Predict using the model
-
-#if st.sidebar.button('Performance Rating'):
-    #prediction = model_rf.predict([encoded_input])[0]
-    #predicted_income_group = performance_rating_map[prediction]
-    #st.sidebar.write('Predicted Performance :', le_target.inverse_transform([prediction])[0])
-
+#Predicting Employee Performance
 if st.sidebar.button('Performance Rating'):
     prediction = model_rf.predict([encoded_input])[0]
-    predicted_performance_rating = performance_rating_map[prediction]
-    st.sidebar.write('Performance Rating:', predicted_performance_rating)
-
+    
+    
